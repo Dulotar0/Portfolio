@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+$dark_background_color: #34383d;
+$dark_typo_color: #efefec;
+
+$light_background_color: #efedea;
+$light_typo_color: #333b3c;
+
+:root {
+  color-scheme: light dark;
+}
+body {
+  color: light-dark( $light_typo_color, $dark_typo_color );
+  background-color: light-dark( $light_background_color , $dark_background_color );
+  margin: 0;
+  padding: 0;
+  a{
+    text-decoration: none;
+    :visited,:hover{
+      color: light-dark( $light_typo_color, $dark_typo_color );
+    }
+  }
+}
