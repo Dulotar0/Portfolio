@@ -1,23 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
-$dark_background_color: #34383d;
-$dark_typo_color: #efefec;
-
-$light_background_color: #efedea;
-$light_typo_color: #333b3c;
-
-:root {
-  color-scheme: light dark;
-}
-body {
-  color: light-dark( $light_typo_color, $dark_typo_color );
-  background-color: light-dark( $light_background_color , $dark_background_color );
+/* You can add global styles to this file, and also import other style files */
+* {
   margin: 0;
   padding: 0;
-  a{
-    text-decoration: none;
-    :visited,:hover{
-      color: light-dark( $light_typo_color, $dark_typo_color );
-    }
-  }
+}
+
+:root {
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --reverse-variant: #101425;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+.darkmode {
+  --base-color: #070b1b;
+  --base-variant: #101425;
+  --reverse-variant:#e8e9ed;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--text-color);
 }

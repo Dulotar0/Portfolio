@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  height: auto;
+}
+.list-container{
+        display: flex;
+        justify-content: flex-end;
+    ul{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        li{
+            margin: 0 7px;
+            img{
+                height: 5vh;
+                width: auto;
+            }
+            .big-icon{
+                height: 6vh;
+            }
+        }
+    }
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    img{
+        height: 6vh;
+        width: auto;
+    }
+}
