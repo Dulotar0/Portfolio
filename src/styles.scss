@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
-/* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +7,20 @@
 :root {
   --base-color: white;
   --base-variant: #e8e9ed;
-  --reverse-variant: #101425;
+  --reverse-variant: #292929;
   --text-color: #111528;
+  --reverse-text-color: #ffffff;
   --secondary-text: #232738;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
 }
 
 .darkmode {
-  --base-color: #070b1b;
-  --base-variant: #101425;
+  --base-color: #181b22;
+  --base-variant: #292929;
   --reverse-variant:#e8e9ed;
   --text-color: #ffffff;
+  --reverse-text-color: #111528;
   --secondary-text: #a4a5b8;
   --primary-color: #3a435d;
   --accent-color: #0071ff;

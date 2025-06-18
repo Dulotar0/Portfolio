@@ -5,7 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './header.html',
-  styleUrl: './header.scss'
+  styleUrls: ['./header.scss']
 })
 export class Header {
+  movil = false
+  openBurguer() {
+    
+  }
 }
