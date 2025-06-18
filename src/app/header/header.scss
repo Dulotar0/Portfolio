@@ -13,7 +13,38 @@
             border-radius: 50%;
         }
     }
-    svg{
+    .list-container{
+        background-color: var(--reverse-variant);
+        position: absolute;
+
+        top: 100px;
+        right: 20px;
+        height: 30%;
+        width: 50%;
+
+        border-radius: 25px;
+        ul{
+            height: 100%;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 0 20px;
+            li{
+                border-bottom: 1px solid var(--base-variant);
+                margin: 0 7px; 
+                a{
+                    color: var(--reverse-text-color);
+                    text-decoration: none;
+                    font-size: xx-large;
+                    display: block;         
+                    
+                }
+                
+            }
+        } 
+    }
+    .burguerIcon{
         background-color: var( --reverse-variant );
         fill:var( --base-variant );
         width: 30px;
@@ -24,38 +55,40 @@
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
+.list-container {
+  display: none; /* o visibility: hidden */
 }
 
-@media (min-width: 1025px) {
+.list-container.open {
+  display: block; /* o visibility: visible */
+}
+
+@media (min-width: 768px){
     .main-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 2px solid var(--reverse-variant);
-        .logo-container{
-            margin: 1rem;
-            img{
-                height: 6vh;
-                width: auto;
-                background-color: rgb(255, 255, 255);
-                border-radius: 50%;
-            }
+        .list-container {
+            all: unset;
+            display: block;
+        }
+        img{
+            height: 6vh;
+            width: auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+        .burguerButton{
+            display: none;
         }
         .list-container{
-            display: flex;
-            justify-content: flex-end;
-            margin: 1rem;
             ul{
                 display: flex;
+                flex-direction: row;
                 list-style-type: none;
                 align-items: center;
                 li{
                     margin: 0 7px;
                     /*Nav buttons*/
                     a {
+                        
                         appearance: none;
                         background-color: var(--base-variant);
                         border: 2px solid var(--reverse-variant);
@@ -100,3 +133,4 @@
         }
     }
 }
+

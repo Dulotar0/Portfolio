@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.scss']
 })
 export class Header {
-  movil = false
-  openBurguer() {
-    
+  visible = true;
+
+
+  openBurguer() {  
+    this.visible = !this.visible;
+    console.log(this.visible)
   }
+  
 }
