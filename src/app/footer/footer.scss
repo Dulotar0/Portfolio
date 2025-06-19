@@ -1,4 +1,27 @@
-img{
-    height: 50px;
-    width: auto;
+#contacto{
+    border-top: 2px solid var(--reverse-variant);
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: end;
+        li{
+            padding: 5px;
+            a{
+                img{
+                    height: 50px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    
+}
+
+@media(min-Width: 576px){
+    #contacto{
+        ul{
+            justify-content: center;
+        }
+        
+    }
 }
