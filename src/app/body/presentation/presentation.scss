@@ -1,34 +1,23 @@
-@media (max-width: 575px){
+@media (min-width: 1024px){
     .container{
         display: flex;
-        justify-content: center;     
+        flex-direction: row;
+        margin-right: 10%;
+        margin-left: 10%;
         img{
-            margin-top: 10%;
-        }   
-    }
-}
-@media (min-width: 576px){
-    .container{
-        display: flex;
-        justify-content: center;     
-        img{
-            margin-top: 10%;
-        }   
-        h1, h2,p{
-            position: absolute;
+            height: 700px;
+            width: auto;
         }
-        .name{
-            left:25%;
-            top: 20%;
-        }
-        .titulo{
-            left: 60%;
-            top: 25%;
-        }
-        p{
-            left: 60%;
-            top: 33%;
-            margin-right: 200px;
-        }
+        div{
+            margin-top: 20%;
+            h1{
+                margin-bottom: 5%;
+                font-size: 3.5em;
+            }
+            h2{
+                margin-bottom: 1%;
+                font-size: 2em;
+            }
+        } 
     }
 }
