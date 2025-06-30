@@ -53,7 +53,9 @@
         border-radius: 50%;
     }
 }
-
+#contacto{
+    display: none;
+}
 .list-container {
   opacity: 0;
   pointer-events: none;
@@ -68,11 +70,14 @@
 
 @media (min-width: 768px){
     .main-header{
+        #contacto{
+            display:block;
+        }
         .list-container {
             all: unset;
             display: block;
         }
-        img{
+        >img{
             height: 6vh;
             width: auto;
             background-color: rgb(255, 255, 255);
@@ -137,6 +142,13 @@
             ul{
                 display: flex;
                 list-style: none;
+                margin-right: 10px;
+                li{
+                    margin: 5px;
+                    img{
+                        height: 40px;
+                    }                
+                }
             }           
         }         
     }
