@@ -1,8 +1,12 @@
 import { Routes } from '@angular/router';
 import { Home } from './body/home/home';
+import { About } from './body/about/about'
 import { Experience } from './body/experience/experience';
+import { Proyects } from './body/proyects/proyects';
 
 export const routes: Routes = [
     { path:'', component:Home, pathMatch: 'full'},
-    { path:'experience', component:Experience }
+    { path:'about', component:About },
+    { path:'experience', component:Experience },
+    { path:'proyects', component:Proyects }
 ];
