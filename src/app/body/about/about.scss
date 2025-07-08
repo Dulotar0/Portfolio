@@ -1,0 +1,40 @@
+.body{
+    margin: 2% 10%;
+    h2{
+        text-align: center;
+        font-size: 3em;
+        
+    }
+    h3{
+        text-align: center;
+        font-size: 2em;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    p{
+        text-align: center;
+    }
+    .listas{
+        display: flex;
+        justify-content: space-between;
+        margin: 2%;
+        ul{
+            list-style: none;           
+            columns: 3;
+            margin-top: 2%;
+            li{
+                padding: 0 10px;
+                
+            }
+        }
+        .idioms li:nth-child(2),
+        .tec li:nth-child(4),
+        .tec li:nth-child(5),
+        .tec li:nth-child(6){
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+        
+    }
+    
+}
