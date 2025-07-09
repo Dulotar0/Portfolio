@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 
 :root {
@@ -14,6 +13,12 @@
   --secondary-text: #232738;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+
+  --heading-text: 'Inter',sans-serif;
+  --p-text:'Poppins',sans-serif;
+
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  height: 100vh;
 }
 
 .darkmode {
@@ -28,6 +33,13 @@
 }
 
 body {
-  background-color: var(--base-color);
   color: var(--text-color);
+  
+
+  h1,h2,h3{
+    font-family: var(--heading-text);
+  }
+  p{
+    font-family: var(--p-text);
+  }
 }

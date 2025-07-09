@@ -1,39 +1,49 @@
 .body{
-    margin: 2% 10%;
-    h2{
+    margin: 2% 8rem;
+    height: 100vh;
+    h1{
         text-align: center;
         font-size: 3em;
-        
+        margin-bottom: 1%;
     }
-    h3{
-        text-align: center;
-        font-size: 2em;
-        margin-left: 5%;
-        margin-top: 2%;
+    .intro{
+        text-align: left;
+        font-size: 1.3em;
+        margin-bottom: 0.5rem;
     }
-    p{
-        text-align: center;
+    >p{
+        text-align: justify;
+        margin-bottom: 0.5rem;
     }
     .listas{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 2%;
-        ul{
-            list-style: none;           
+        margin-top: 5%;
+        h2{
+            text-align: center;
+            font-size: 2em;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            text-align: center;
+        }
+        .tec{
             columns: 3;
-            margin-top: 2%;
-            li{
-                padding: 0 10px;
-                
+            li:nth-child(2){
+                border-right: 1px solid black;
+                border-left: 1px solid black;
             }
         }
-        .idioms li:nth-child(2),
-        .tec li:nth-child(4),
-        .tec li:nth-child(5),
-        .tec li:nth-child(6){
-            border-right: 1px solid black;
-            border-left: 1px solid black;
+        ul{
+            list-style: none;           
+            margin-top: 1rem;
+            li{
+                padding: 0 10px;
+            }
         }
+        
         
     }
     
