@@ -1,16 +1,31 @@
 @media (max-width: 766px){
     .container{
-        >div{
+        margin: 2em 0;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        >div{   
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            width: 80%;
-            img{
-                height: 300px;
-                width: auto;
+            align-items: start;
+            text-align: justify;
+
+            p:nth-child(1){
+                font-size: 1.5em;
+                margin-top: 1em;
+            }        
+            h1{
+                font-size: 2em;
+                margin-bottom: 2%;
+                margin-bottom: 1em;
             }
-        }   
+            h2{
+                font-size: 1.3em;
+            }
+        } 
+        
     }
 }
 @media (min-width: 767px) and (max-width: 1024px){
