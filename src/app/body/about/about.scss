@@ -1,23 +1,26 @@
 .body{
-    margin: 2% 8rem;
-    height: 100vh;
     h1{
         text-align: center;
         font-size: 3em;
-        margin-bottom: 1%;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
     }
-    .intro{
+    h2:nth-of-type(1){
         text-align: left;
-        font-size: 1.3em;
+        font-size: 0.9em;
+    }
+    h2:nth-of-type(2){
+        font-size: 1.5em;
         margin-bottom: 0.5rem;
     }
-    >p{
+   >p{
         text-align: justify;
+        font-size: 0.9em;
         margin-bottom: 0.5rem;
     }
     .listas{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         margin: 2%;
         margin-top: 5%;
         h2{
@@ -30,10 +33,10 @@
             text-align: center;
         }
         .tec{
-            columns: 3;
-            li:nth-child(2){
+            columns: 2;
+            li:nth-child(-n+5) {
                 border-right: 1px solid black;
-                border-left: 1px solid black;
+                margin-right: -20px;
             }
         }
         ul{
@@ -42,9 +45,103 @@
             li{
                 padding: 0 10px;
             }
+        }   
+    }   
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body{
+        h2:nth-of-type(1){
+            font-size: 1.2em;
         }
-        
-        
+        h2:nth-of-type(2){
+            font-size: 1.7em;
+        }
+        >p{
+            font-size: 1em;
+        }
+        .listas{
+            display: flex;
+            flex-direction: column;
+            margin: 2%;
+            margin-top: 5%;
+            h2{
+                text-align: center;
+                font-size: 2em;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                text-align: center;
+            }
+            .tec{
+                columns: 3;
+                li:nth-child(-n+6) {
+                    border-right: 1px solid black;
+                    margin-right: -20px;
+                }
+            }
+            ul{
+                columns: 3;
+                list-style: none;           
+                margin-top: 1rem;
+                li:nth-child(-n+2) {
+                    border-right: 1px solid black;
+                    margin-right: -20px;
+                }
+                li{
+                    padding: 0 10px;
+                }
+            }   
+        }   
     }
-    
+}
+@media (min-width: 1024px) {
+    .body{
+        margin: 2% 8rem;
+        height: 100vh;
+        h1{
+            text-align: center;  
+        }
+        h2:nth-of-type(1){
+            text-align: left;
+            font-size: 1.5em;
+        }
+        h2:nth-of-type(2){
+            font-size: 1.8em;
+            margin-bottom: 0.5rem;
+        }
+        >p{
+            font-size: 1em;
+        }
+        .listas{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 2%;
+            margin-top: 5%;
+            h2{
+                text-align: center;
+                font-size: 2em;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                text-align: center;
+            }
+            .tec{
+                columns: 3;
+                li:nth-child(-n+6) {
+                    border-right: 1px solid black;
+                    margin-right: -20px;
+                }
+            }
+            ul{
+                list-style: none;           
+                margin-top: 1rem;
+                li{
+                    padding: 0 10px;
+                }
+            }   
+        }
+    }
 }
