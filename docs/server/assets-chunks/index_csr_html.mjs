@@ -10,8 +10,9 @@ export default `<!doctype html>
 <style>*{margin:0;padding:0}:root{--base-color:white;--base-variant:#e8e9ed;--reverse-variant:#161616;--text-color:#111528;--reverse-text-color:#ffffff;--secondary-text:#232738;--primary-color:#3a435d;--accent-color:#0071ff;--heading-text:"Inter",sans-serif;--p-text:"Poppins",sans-serif;background:linear-gradient(to bottom,#fff,#fff);height:100vh}body{color:var(--text-color)}</style><link rel="stylesheet" href="styles-LZGRCS7F.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-LZGRCS7F.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="main-X6JPSZTK.js" type="module"></script></body>
+<script src="main-VTUPUTEZ.js" type="module"></script></body>
 </html>
+<!--Borrar docs-->
 <!--ng build --output-path docs --base-href /Portfolio/  -->
-<!--cp -r docs/browser/* docs/-->
+<!--xcopy docs\\browser\\* docs\\ /E /I /Y-->
 <!--Luego borrar carpeta browser-->`;

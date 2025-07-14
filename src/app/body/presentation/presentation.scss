@@ -10,7 +10,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
-        text-align: justify;
         p:nth-child(1){
             font-size: 1.5em;
             margin-top: 0.6em;
@@ -22,6 +21,9 @@
         h2{
             font-size: 1.3em;
             margin-bottom: 0.2em;
+        }
+        p{
+            text-align: justify;
         }
     } 
     
