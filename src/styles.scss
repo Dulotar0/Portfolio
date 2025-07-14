@@ -7,7 +7,7 @@
 :root {
   --base-color: white;
   --base-variant: #e8e9ed;
-  --reverse-variant: #292929;
+  --reverse-variant: #161616;
   --text-color: #111528;
   --reverse-text-color: #ffffff;
   --secondary-text: #232738;
@@ -21,20 +21,8 @@
   height: 100vh;
 }
 
-.darkmode {
-  --base-color: #181b22;
-  --base-variant: #292929;
-  --reverse-variant:#e8e9ed;
-  --text-color: #ffffff;
-  --reverse-text-color: #111528;
-  --secondary-text: #a4a5b8;
-  --primary-color: #3a435d;
-  --accent-color: #0071ff;
-}
-
 body {
   color: var(--text-color);
-  
 
   h1,h2,h3{
     font-family: var(--heading-text);

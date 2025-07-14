@@ -1,9 +1,13 @@
 .body{
+    padding: 1.5rem 1rem;
+    margin: auto;
     h1{
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
         text-align: center;
-        font-size: 3em;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
+        font-weight: 800;
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5rem;
     }
     h2:nth-of-type(1){
         text-align: left;
@@ -32,13 +36,44 @@
         p{
             text-align: center;
         }
-        .tec{
-            columns: 2;
-            li:nth-child(-n+5) {
-                border-right: 1px solid black;
-                margin-right: -20px;
+        .tec {
+            display: flex;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 0 auto;
+
+            .col {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: 50%; // Asegura que ambas columnas ocupen el 50% del ancho
+
+                &.izquierda {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: black;
+                }
+
+                li p {
+                    text-align: left;
+                    padding-right: 10px; // Espacio para separar del borde
+                }
+                }
+
+                &.derecha li p {
+                text-align: right;
+                padding-left: 10px; // Espacio para separar del borde
+                }
             }
         }
+
         ul{
             list-style: none;           
             margin-top: 1rem;

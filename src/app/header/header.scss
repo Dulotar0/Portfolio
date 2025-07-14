@@ -3,7 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--reverse-variant);
     border-bottom: 2px solid var(--reverse-variant);
+    box-shadow: 0px 0px 20px black;
     .logo-container{
         margin: 1rem;
         img{
@@ -14,25 +16,23 @@
         }
     }
     .list-container{
-        position: absolute;
-        top: 85px;
-        width: 50%;
-        height: auto;
-        border-radius: 25px;
         background-color: var(--reverse-variant);
+        display: flex;
+        flex-direction: column;
+        
+        position: fixed; /* O absolute si lo necesitas relativo a un contenedor */
+        top: 70px;
+        right: 0px;
+        width: 40vw;
+        height: 90vh;
+
 
         transition: 0.5s;
-        ul{
-            height: 100%;
+        ul:nth-child(1){
             list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            margin: 0 20px;
-            padding: 30px 10px 30px 0;
             li{
                 border-bottom: 1px solid var(--base-variant);
-                margin: 4px 7px; 
+                margin: 10px 15px; 
                 a{
                     color: var(--reverse-text-color);
                     text-decoration: none;
@@ -42,10 +42,26 @@
                 
             }
         } 
+        div:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto;
+            ul{
+                display: flex;
+                li{
+                    border-bottom: none;
+                    margin: 4px 5px;
+                    img{
+                        height: 40px;
+                    }
+                }
+            }
+        }
     }
     .burguerIcon{
-        background-color: var( --reverse-variant );
-        fill:var( --base-variant );
+        background-color: var( --base-variant );
+        fill:var( --reverse-variant );
         width: 30px;
         height: auto;
         padding: 5px;
@@ -57,12 +73,13 @@
     display: none;
 }
 .list-container {
-  opacity: 0;
-  pointer-events: none;
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
-
 .list-container.open {
-    transform: translateX(95%);
+    transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
 }

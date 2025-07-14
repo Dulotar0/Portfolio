@@ -8,11 +8,26 @@
 
     <div class="list-container" [class.open]="visible">
         <ul>
-            <li><a routerLink="/" class="btn">Home</a></li>
-            <li><a routerLink="/about">About me</a></li>
-            <li><a routerLink="/experience" class="btn">Experience</a></li>
-            <li><a routerLink="/proyects">Proyects</a></li>
+            <li><a routerLink="/" class="btn" (click)="openBurguer()">Home</a></li>
+            <li><a routerLink="/about" (click)="openBurguer()">About me</a></li>
+            <li><a routerLink="/experience" class="btn" (click)="openBurguer()">Experience</a></li>
+            <li><a routerLink="/proyects" (click)="openBurguer()">Proyects</a></li>
         </ul>
+        <div>
+            <div>
+                <ul>
+                    <li><a href="tel:+34648272585"><img  src="assets/Phone_icon.png" alt="Phone number"></a></li>
+                    <li><a href="https://wa.me/648272585"><img src="assets/WhatsApp_icon.png" alt="What'sApp" class="big-icon"></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul >
+                    <li><a href="mailto:ericalbertalonso@gmail.com"><img src="assets/gmail.png" alt="Email" class="big-icon"></a></li>
+                    <li><a href="https://github.com/Dulotar0"><img src="assets/GitHub.png" alt="Github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/eric-albert-alonso"><img src="assets/LinkedIn.png" alt="Linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div>
         <nav id="contacto">

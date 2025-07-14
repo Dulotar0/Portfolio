@@ -9,8 +9,7 @@ import { RouterLink } from '@angular/router'
   styleUrls: ['./header.scss']
 })
 export class Header {
-  visible = true;
-
+  visible = false;
 
   openBurguer() {  
     this.visible = !this.visible;
