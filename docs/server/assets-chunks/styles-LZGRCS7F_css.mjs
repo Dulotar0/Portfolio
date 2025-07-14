@@ -1,0 +1,2 @@
+export default `*{margin:0;padding:0}:root{--base-color: white;--base-variant: #e8e9ed;--reverse-variant: #161616;--text-color: #111528;--reverse-text-color: #ffffff;--secondary-text: #232738;--primary-color: #3a435d;--accent-color: #0071ff;--heading-text: "Inter",sans-serif;--p-text:"Poppins",sans-serif;background:linear-gradient(to bottom,#fff,#fff);height:100vh}body{color:var(--text-color)}body h1,body h2,body h3{font-family:var(--heading-text)}body p{font-family:var(--p-text)}
+`;
