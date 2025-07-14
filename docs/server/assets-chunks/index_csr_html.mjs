@@ -12,4 +12,6 @@ export default `<!doctype html>
   <app-root></app-root>
 <script src="main-X6JPSZTK.js" type="module"></script></body>
 </html>
-<!--ng build --output-path docs --base-href /Portfolio/  -->`;
+<!--ng build --output-path docs --base-href /Portfolio/  -->
+<!--cp -r docs/browser/* docs/-->
+<!--Luego borrar carpeta browser-->`;
