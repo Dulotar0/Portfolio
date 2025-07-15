@@ -6,13 +6,14 @@
     </div>
  
 
-    <div class="list-container" [class.open]="visible">
-        <ul>
-            <li><a routerLink="/" class="btn" (click)="openBurguer()">Home</a></li>
-            <li><a routerLink="/about" (click)="openBurguer()">About me</a></li>
-            <li><a routerLink="/experience" class="btn" (click)="openBurguer()">Experience</a></li>
-            <li><a routerLink="/proyects" (click)="openBurguer()">Proyects</a></li>
-        </ul>
+    <div class="list-container" id="list-container" [class.open]="visible" #menu>
+        <nav>
+            <a routerLink="/" class="btn activo" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Home</a>
+            <a routerLink="/about" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">About me</a>
+            <a routerLink="/experience" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Experience</a>
+            <a routerLink="/proyects" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Projects</a>
+        </nav>
+
         <div>
             <div>
                 <ul>

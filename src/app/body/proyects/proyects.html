@@ -1,5 +1,5 @@
 <div class="projects-section">
-  <h2>Proyects</h2>
+  <h2>Projects</h2>
 
   <div class="project">
     <h3>Roll Keeper</h3>
@@ -10,7 +10,7 @@
       Platform aimed at game masters of role-playing games, currently in development, to organize stories, characters, combats, music, and dice rolls, improving session management both online and offline.
     </p>
     
-    <button (click)="toggleDisplay()" class="readMore">Read more</button>
+    <button (click)="toggleDisplay($event)" class="readMore">Read more</button>
 
     <ul class="display_none">
       <li>Campaign editor with enriched text and dynamic events.</li>
@@ -20,6 +20,49 @@
       <li>Quick online dice rolls to compare stats during the session.</li>
     </ul>
 
-    <button (click)="toggleDisplay()" class="display_none readLess">Read less</button>
+    <button (click)="toggleDisplay($event)" class="display_none readLess">Read less</button>
+  </div>
+  <h2>Class Projects</h2>
+  <div class="project">
+    <h3>Managing GitHub Users and Repositories</h3>
+    <h4>Github API | Vue | JavaScript | HTML | Bootstrap | Github</h4>
+    
+    <p>
+      This lab aims to create a complex Vue application using single-file components. The application is a single-page application that will allow the user to visualize certain data available through the GitHub API.
+    </p>
+    
+    <button (click)="toggleDisplay($event)" class="readMore">Read more</button>
+
+    <ul class="display_none">
+      <li>Developed a Vue.js SPA using three reusable components (App, GitHub, GitHubRepo).</li>
+      <li>Implemented real-time interaction with the GitHub API using fetch and async/await.</li>
+      <li>Processed JSON responses to display user profiles and their public repositories.</li>
+      <li>Used dynamic component rendering with props and conditional display (v-if / v-for).</li>
+      <li>Handled errors gracefully (e.g., user not found via response.ok check).</li>
+      <li>Styled the application using Bootstrap for responsive UI design.</li>
+    </ul>
+
+    <button (click)="toggleDisplay($event)" class="display_none readLess">Read less</button>
+  </div>
+  <div class="project">
+    <h3>Budget Manager</h3>
+    <h4>JavaScript | HTML | CSS | Github</h4>
+    
+    <p>
+      Personal budget manager where the user can record their expenses so they can consult and track them.
+    </p>
+    
+    <button (click)="toggleDisplay($event)" class="readMore">Read more</button>
+
+    <ul class="display_none">
+      <li>Implemented expense creation with title, amount, and tags, including input validation.</li>
+      <li>Displayed dynamic list of expenses with individual deletion capability.</li>
+      <li>Added filtering functionality to search expenses by tags.</li>
+      <li>Persisted user data using LocalStorage, maintaining state across page reloads.</li>
+      <li>Calculated and displayed the total amount of all expenses in real time.</li>
+      <li>Structured the code using JavaScript classes to separate business logic and UI manipulation.</li>
+    </ul>
+
+    <button (click)="toggleDisplay($event)" class="display_none readLess">Read less</button>
   </div>
 </div>

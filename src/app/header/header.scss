@@ -7,9 +7,10 @@
     border-bottom: 2px solid var(--reverse-variant);
     box-shadow: 0px 0px 20px black;
     .logo-container{
-        margin: 1rem;
+        padding: 5px;
+        margin: 0 15px;
         img{
-            height: 6vh;
+            height: 7vh;
             width: auto;
             background-color: rgb(255, 255, 255);
             border-radius: 50%;
@@ -20,26 +21,30 @@
         display: flex;
         flex-direction: column;
         
-        position: fixed; /* O absolute si lo necesitas relativo a un contenedor */
-        top: 70px;
+        position: fixed;
+        top: 60px;
         right: 0px;
         width: 40vw;
-        height: 90vh;
+        height: 91vh;
 
 
         transition: 0.5s;
-        ul:nth-child(1){
-            list-style-type: none;
-            li{
+        nav:nth-child(1){
+            a{
+                color: var(--reverse-text-color);
+                text-decoration: none;
+                font-size: 1.1em;
+                display: block;          
                 border-bottom: 1px solid var(--base-variant);
                 margin: 10px 15px; 
-                a{
-                    color: var(--reverse-text-color);
-                    text-decoration: none;
-                    font-size: 1.5em;
-                    display: block;               
+                &.activo{
+                    font-size: 1.4em;
+                    background-color: var(--base-variant);
+                    color: var(--text-color);
+                    border-radius: 10px;
+                    padding: 5px;
+                    font-weight: 600;
                 }
-                
             }
         } 
         div:nth-child(2){
@@ -47,8 +52,10 @@
             flex-direction: column;
             align-items: center;
             margin-top: auto;
+            padding-bottom: 20px;
             ul{
                 display: flex;
+                list-style: none;
                 li{
                     border-bottom: none;
                     margin: 4px 5px;
@@ -62,8 +69,8 @@
     .burguerIcon{
         background-color: var( --base-variant );
         fill:var( --reverse-variant );
-        width: 30px;
-        height: auto;
+        height: 5vh;
+        width: auto;
         padding: 5px;
         margin: 0 20px;
         border-radius: 50%;
@@ -73,18 +80,16 @@
     display: none;
 }
 .list-container {
-    transform: translateY(100%);
+    transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 .list-container.open {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
 }
-
-
 @media (min-width: 768px){
     .main-header{
         background-color: rgb(19, 19, 19);
