@@ -32,7 +32,6 @@
             margin-bottom: 1rem;
         }
         ul {
-            list-style-type: disc;
             padding-left: 1.5rem;
             li {
                 margin-bottom: 0.5rem;
@@ -61,4 +60,15 @@
             display: block;
         }
     }
+}
+@media (min-width: 768px){
+    .experience-section .job button{
+        padding: 1%;
+        &:hover{
+            background-color: var(--reverse-variant);
+            color: var(--reverse-text-color);
+            border: 2px solid var(--base-color);
+        }
+    }
+    
 }

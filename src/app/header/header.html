@@ -5,32 +5,16 @@
         </a>
     </div>
  
-
-    <div class="list-container" id="list-container" [class.open]="visible" #menu>
-        <nav>
-            <a routerLink="/" class="btn activo" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Home</a>
-            <a routerLink="/about" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">About me</a>
-            <a routerLink="/experience" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Experience</a>
-            <a routerLink="/proyects" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Projects</a>
-        </nav>
-
-        <div>
-            <div>
-                <ul>
-                    <li><a href="tel:+34648272585"><img  src="assets/Phone_icon.png" alt="Phone number"></a></li>
-                    <li><a href="https://wa.me/648272585"><img src="assets/WhatsApp_icon.png" alt="What'sApp" class="big-icon"></a></li>
-                </ul>
-            </div>
-            <div>
-                <ul >
-                    <li><a href="mailto:ericalbertalonso@gmail.com"><img src="assets/gmail.png" alt="Email" class="big-icon"></a></li>
-                    <li><a href="https://github.com/Dulotar0"><img src="assets/GitHub.png" alt="Github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/eric-albert-alonso"><img src="assets/LinkedIn.png" alt="Linkedin"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div>
+        <div class="list-container" id="list-container" [class.open]="visible" #menu>
+            <nav>
+                <a routerLink="/" class="btn activo" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Home</a>
+                <a routerLink="/about" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">About me</a>
+                <a routerLink="/experience" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Experience</a>
+                <a routerLink="/proyects" class="btn" routerLinkActive="activo" (click)="openBurguer()" (click)="handleClick($event)">Projects</a>
+            </nav>
+        </div>
+        
         <nav id="contacto">
             <ul>
                 <li>
@@ -50,10 +34,12 @@
                 </li>
             </ul>
         </nav>
-        <nav class="burguerButton" (click)="openBurguer()">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="burguerIcon">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-            </svg>
-        </nav>
     </div>
+    
+    <nav class="burguerButton" (click)="openBurguer()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="burguerIcon">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+    </nav>
+    
 </div>

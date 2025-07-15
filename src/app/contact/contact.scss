@@ -1,0 +1,17 @@
+div{
+   background-color: var(--reverse-variant);
+   box-shadow: 0px 0px 20px black;
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        li{
+            margin-top: 15px;
+            img{
+                height: 30px;
+            }
+        }
+    }
+}

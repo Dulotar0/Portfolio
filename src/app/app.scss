@@ -1,13 +1,30 @@
 .body{
     display: flex;
     flex-direction: column;
+    
 }
 .header{
     position: sticky;
     top: 0;
     background-color: var(--base-color);
+    height: 10vh;
+}
+.contact{
+    position: sticky;
+    bottom: 0;
 }
 .content{
     width: 80%;
     margin-left: 10%;
+    min-height: 90vh;
+}
+@media (min-width: 768px){
+    .contact{
+        display: none;
+    }
+    .content{
+        width: 80%;
+        margin-left: 10%;
+        min-height: 90vh;
+    }
 }
