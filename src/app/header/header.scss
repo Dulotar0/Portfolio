@@ -3,9 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--reverse-variant);
+    background-color: var(--base-variant);
     border-bottom: 2px solid var(--reverse-variant);
-    box-shadow: 0px 0px 20px black;
+    //box-shadow: 0px 0px 20px black;
     .logo-container{
         padding: 5px;
         margin: 0 15px;
@@ -19,33 +19,26 @@
     .list-container{
         background-color: var(--reverse-variant);
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;  
         position: fixed;
         top: 60px;
         right: 0px;
         width: 40vw;
         height: 91vh;
-
-
         transition: 0.5s;
-        nav:nth-child(1){
-            a{
-                color: var(--reverse-text-color);
-                text-decoration: none;
-                font-size: 1.1em;
-                display: block;          
-                border-bottom: 1px solid var(--base-variant);
-                margin: 10px 15px; 
-                &.activo{
-                    font-size: 1.4em;
-                    background-color: var(--base-variant);
-                    color: var(--text-color);
-                    border-radius: 10px;
-                    padding: 5px;
-                    font-weight: 600;
-                }
+        .header-menu{
+            text-decoration: none;
+            display: block;          
+            border-bottom: 1px solid var(--base-variant);
+            background-color: var();
+            margin: 10px 15px; 
+            &.activo{
+                background-color: var(--base-color);
+                border-radius: 10px;
+                padding: 5px;
+                font-weight: 600;
             }
+            
         } 
 
     }
@@ -75,7 +68,6 @@
 }
 @media (min-width: 768px){
     .main-header{
-        background-color: rgb(19, 19, 19);
         justify-content: flex-start;
         #contacto{
             display:block;
@@ -110,8 +102,13 @@
                     li{
                         margin: 5px;
                         img{
-                            height: 40px;
-                        }                
+                            height: 50px;
+                        }    
+                        .big-icon{
+                            width: 60px;
+                            height: auto;
+                            margin-top: -3px;
+                        }    
                     }
                 }           
             }    

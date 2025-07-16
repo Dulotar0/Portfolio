@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
-:root {
+/* Colores blanco y negro
   --base-color: white;
   --base-variant: #e8e9ed;
   --reverse-variant: #161616;
@@ -13,21 +12,148 @@
   --secondary-text: #232738;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+  */
+:root {
+  --base-color: #e6e6e6;            /* Fondo claro */
+  --reverse-base-color: #262626;    /* Contrario al base (gris oscuro) */
+  --base-variant: #272727;          /* Header claro */
+  --reverse-variant: #c2c2c2;      /* Contrario al base variant (gris medio-oscuro) */
+  --text-color: #1a1a1a;            /* Texto principal oscuro */
+  --secondary-text-color: #302f2f;  /* Texto secundario más suave */
+  --reverse-text-color: #f0f0f0;    /* Texto claro para fondos oscuros */
+
+
 
   --heading-text: 'Inter',sans-serif;
   --p-text:'Poppins',sans-serif;
+  background-color: var(--base-color);
 
-  background: linear-gradient(to bottom, #ffffff, #ffffff);
   height: 100vh;
 }
 
 body {
   color: var(--text-color);
 
-  h1,h2,h3{
+  h1,h2,h3,h4{
     font-family: var(--heading-text);
   }
   p,a{
     font-family: var(--p-text);
+    
   }
 }
+/*
+  ! ----------------------------------------TIPOGRAFIA----------------------------------------
+*/
+/*-----GENERAL-----*/
+h1{
+  font-size: 1.9em;
+  margin-bottom: 0.5em;
+}
+h2{
+  font-size: 1.3em;
+  margin-bottom: 0.3em;
+}
+h3{
+  font-size: 1.1em;
+}
+p,a{
+  font-size: 1em;
+  text-align: justify;    
+}
+.tech-stack {
+  color: var(--secondary-text-color);
+  font-size: 0.9em;
+  margin-bottom: 0.7rem;
+  margin-top: 0.2rem;
+}
+.underline-title{
+  border-bottom: 2px solid var(--reverse-base-color);
+  padding-bottom: 0.5rem;
+}
+.text-center{
+  text-align: center;
+}
+.tect-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+/*-----HEADER-----*/
+.header-menu{
+  font-size: 1.1em;
+  color: var(--reverse-text-color);
+  &.activo{
+    font-size: 1.3em;
+    color: var(--text-color);
+  }
+}
+/*-----PRESENTATION-----*/
+.presentation-saludo{
+  font-size: 1.4em;  
+  margin-top: 0.6em; 
+}
+/*-----ABOUT-----*/
+.about-degree{
+  font-size: 1.5em;  
+}
+/*-----EXPERIENCE-----*/
+.experience-date {
+  font-style: italic;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.3rem;
+}
+/*-----PROJECTS-----*/
+.projects-class-projects {
+  margin-bottom: 1.2rem;
+  font-weight: 800;
+}
+@media (min-width: 768px){
+  /*-----GENERAL-----*/
+  h1{
+    font-size: 4em;
+  }
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.6em;
+  }
+  p,a{
+    font-size: 1.5em;
+    text-align: justify;    
+  }
+  .tech-stack {
+    font-size: 1.2em;
+  }
+  /*-----HEADER-----*/
+  .header-menu{
+    font-size: 1.7em;
+    &.activo{
+      font-size: 2em;
+    }
+  }
+  /*-----PRESENTATION-----*/
+  .presentation-saludo{
+    font-size: 1.5em; 
+    margin-top: 0.6em; 
+  }
+  /*-----ABOUT-----*/
+  .about-degree{
+    font-size: 1.7em;  
+  }
+  /*-----EXPERIENCE-----*/
+  .experience-date {
+    font-size: 1.8em;
+  }
+  /*-----PROJECTS-----*/
+    .class-projects {
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+  }
+}
+/*
+  ! ----------------------------------------TIPOGRAFIA----------------------------------------
+*/

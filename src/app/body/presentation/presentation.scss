@@ -10,24 +10,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
-        p:nth-child(1){
-            font-size: 1.5em;
-            margin-top: 0.6em;
-        }        
-        h1{
-            font-size: 1.7em;
-            margin-bottom: 0.3em;
-        }
-        h2{
-            font-size: 1.3em;
-            margin-bottom: 0.2em;
-        }
-        p{
-            text-align: justify;
-        }
+        align-items: start;       
     } 
-    
 }
 
 @media (min-width: 1024px){
@@ -35,9 +19,9 @@
         padding: 2% 0 0 0;
         display: flex;
         flex-direction: row;
-        
         height: 100%;
         img{
+            margin-top: 5em;
             height: 700px;
             width: auto;
         }
@@ -47,17 +31,6 @@
             justify-content: center;
             align-items: start;
             margin-left: 2%;
-            p:nth-child(1){
-                font-size: 1.5em;
-            }        
-            h1{
-                font-size: 4em;
-                margin-bottom: 5%;
-            }
-            h2{
-                font-size: 2em;
-                margin-bottom: 1%;
-            }
         } 
         
     }
