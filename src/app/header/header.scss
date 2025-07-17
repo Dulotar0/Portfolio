@@ -28,10 +28,6 @@
         height: 91vh;
         transition: 0.5s;
         z-index: 0; 
-        box-shadow:
-            inset 0 10px 10px -10px rgba(0, 0, 0, 0.7),   /* sombra interna arriba */
-            inset 0 -60px 10px -10px rgba(0, 0, 0, 0.7); 
-        
         .header-menu{
             text-decoration: none;
             display: block;          
