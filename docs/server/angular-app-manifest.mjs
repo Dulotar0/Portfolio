@@ -24,12 +24,12 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 3613, hash: '61d107acfb11ff6a26eed5620158e7ac870c7df3b8311180bea871c38a92b998', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 3409, hash: '24a5695617608a40084c42503eec80d4c2889bae36df8bb48f34253f035218a3', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'about/index.html': {size: 18271, hash: '0a6f63602a61dbb17745451a38833d3cd916145888b8f7ba0da72119de4b7c7e', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 15103, hash: 'f97c010a407ce52279abe42fec8ec31d625b2a06f34fe6e9f617d574861c3c20', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'experience/index.html': {size: 17759, hash: '7427037a527982803cb47de3243ead5d182ffa62ed40d14da1b8c41df9b48348', text: () => import('./assets-chunks/experience_index_html.mjs').then(m => m.default)},
-    'proyects/index.html': {size: 20268, hash: '4094c828adb54757ed6cc3e21947ad58e26ed719bf80da989b21e653893de20f', text: () => import('./assets-chunks/proyects_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 3613, hash: '5802ce42e391925da465187e511462d80c8189211b1b47f7daf9f3dfac593b25', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 3409, hash: 'fe01e56841e7bbc178764721c31657696fd1ba44238c920a114867ace75dea9c', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'about/index.html': {size: 18363, hash: 'b26e624f4ed4cd0d00b8cb721a69618184f28afe63ff7faa3da95c7007959c61', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 15195, hash: '24894aa685b9c205c4957ff4e76d507380f0502e7321995c654938e09adc7091', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'experience/index.html': {size: 17851, hash: '8714ba82dc2bfdec3c59f6244a1840263db8f01adc7ac1bc82ce2fbdd916d98b', text: () => import('./assets-chunks/experience_index_html.mjs').then(m => m.default)},
+    'proyects/index.html': {size: 20360, hash: '578ef441f89133ff770ab773b4cdc49276bd4460ed3ddee7da746080e0ec9202', text: () => import('./assets-chunks/proyects_index_html.mjs').then(m => m.default)},
     'styles-LICQ23OS.css': {size: 1882, hash: 'K6y8lhRILes', text: () => import('./assets-chunks/styles-LICQ23OS_css.mjs').then(m => m.default)}
   },
 };
