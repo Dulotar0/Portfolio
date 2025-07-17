@@ -7,10 +7,15 @@ div{
         justify-content: space-evenly;
         list-style: none;
         li{
-            margin-top: 15px;
+            margin-top: 10px;
+            margin-bottom: 5px;
             img{
                 height: 30px;
             }
+            .big-icon{
+                width: 6vh;
+                height: auto;
+            }  
         }
     }
 }
