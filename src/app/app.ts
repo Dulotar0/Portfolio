@@ -7,7 +7,7 @@ import { Contact } from './contact/contact'
 @Component({
   selector: 'app-root',
   standalone: true ,
-  imports: [RouterOutlet, Header,Contact],
+  imports: [RouterOutlet, Header],
   providers: [DeviceDetectorService],
   templateUrl: './app.html',
   styleUrl: './app.scss'

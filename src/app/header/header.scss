@@ -37,7 +37,15 @@
             }
             
         } 
-
+        .contactMenu{
+            margin-top: 25%;
+            border-bottom: 2px solid white;
+            width:100%;
+        }
+        .mvContact{
+            position: absolute;
+            bottom: 2%;
+        }
     }
     .burguerIcon{
         background-color: var( --base-variant );
@@ -64,6 +72,9 @@
     pointer-events: auto;
 }
 @media (min-width: 768px){
+    .mvContact{
+        display: none;
+    }
     .main-header{
         justify-content: flex-start;
         #contacto{

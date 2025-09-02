@@ -1,10 +1,11 @@
 import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router'
+import { Contact } from '../contact/contact';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,Contact],
   templateUrl: './header.html',
   styleUrls: ['./header.scss']
 })

@@ -1,11 +1,10 @@
 div{
    background-color: var(--base-variant);  
     ul{
-        display: flex;
-        flex-direction: row;
+        column-count: 3;
         align-items: center;
-        justify-content: space-evenly;
         list-style: none;
+        margin: 0 10%;
         li{
             margin-top: 10px;
             margin-bottom: 5px;
@@ -16,6 +15,12 @@ div{
                 width: 6vh;
                 height: auto;
             }  
+        }
+        li:nth-child(3){
+            margin-left: -10%;
+        }
+        li:nth-child(5){
+            margin-left: 10%;
         }
     }
 }
